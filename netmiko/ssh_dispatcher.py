@@ -78,6 +78,7 @@ from netmiko.sophos import SophosSfosSSH
 from netmiko.terminal_server import TerminalServerSSH
 from netmiko.terminal_server import TerminalServerTelnet
 from netmiko.ubiquiti import UbiquitiEdgeSSH
+from netmiko.ubiquiti import UbiquitiUnifiSwitchSSH
 from netmiko.vyos import VyOSSSH
 from netmiko.watchguard import WatchguardFirewareSSH
 
@@ -142,6 +143,7 @@ CLASS_MAPPER_BASE = {
     "hp_procurve": HPProcurveSSH,
     "huawei": HuaweiSSH,
     "huawei_smartax": HuaweiSmartAXSSH,
+    "huawei_olt": HuaweiSmartAXSSH,
     "huawei_vrpv8": HuaweiVrpv8SSH,
     "ipinfusion_ocnos": IpInfusionOcNOSSSH,
     "juniper": JuniperSSH,
@@ -170,6 +172,7 @@ CLASS_MAPPER_BASE = {
     "sophos_sfos": SophosSfosSSH,
     "ubiquiti_edge": UbiquitiEdgeSSH,
     "ubiquiti_edgeswitch": UbiquitiEdgeSSH,
+    "ubiquiti_unifiswitch": UbiquitiUnifiSwitchSSH,
     "vyatta_vyos": VyOSSSH,
     "vyos": VyOSSSH,
     "watchguard_fireware": WatchguardFirewareSSH,
@@ -222,6 +225,7 @@ CLASS_MAPPER["generic_termserver_telnet"] = TerminalServerTelnet
 CLASS_MAPPER["hp_procurve_telnet"] = HPProcurveTelnet
 CLASS_MAPPER["hp_comware_telnet"] = HPComwareTelnet
 CLASS_MAPPER["huawei_telnet"] = HuaweiTelnet
+CLASS_MAPPER["huawei_olt_telnet"] = HuaweiSmartAXSSH
 CLASS_MAPPER["ipinfusion_ocnos_telnet"] = IpInfusionOcNOSTelnet
 CLASS_MAPPER["juniper_junos_telnet"] = JuniperTelnet
 CLASS_MAPPER["paloalto_panos_telnet"] = PaloAltoPanosTelnet
